@@ -99,6 +99,11 @@ return inquirer.prompt([
     },
     {
       type: 'input',
+      message:  "Please enter pathway to photo/video of application:",
+      name: 'media',
+    },
+    {
+      type: 'input',
       message: "What is your Github username?",
       name: 'username',
       validate: nameInput => {
@@ -141,30 +146,21 @@ function writeToFile(data) {
 function init() {
 
   questions()
-// Get the answers from user 
-.then(answers => {
-  console.log("answers: " + answers)
-    return generateMarkdown(answers);
-})
-// Use data to display on the ReadMe 
-.then(data => {
-  console.log("data: " + data)
-    return writeToFile(data);
-})
-// Catch errors
-.catch(err => {
-    console.log(err)
-})
-
-
-  // questions()
-  //   // Use writeFileSync method to use promises instead of a callback function
-  //   .then((data) => fs.writeFileSync("ExampleREADME.md", generateMarkdown))
-  //   .then(() => console.log('Successfully wrote to README.md'))
-  //   .catch((err) => console.error(err));
-    
+  // Get the answers from user 
+  .then(answers => {
+    console.log("answers: " + answers)
+      return generateMarkdown(answers);
+  })
+  // Use data to display on the ReadMe 
+  .then(data => {
+    console.log("data: " + data)
+      return writeToFile(data);
+  })
+  // Catch errors
+  .catch(err => {
+      console.log(err)
+  })
 }
 
 // Function call to initialize app
 init();
-

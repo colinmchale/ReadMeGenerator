@@ -79,16 +79,18 @@ ${data.lesson}
 ${data.installation}
 
 ## Usage  
+![Screenshot of App](${data.media})
 ${data.usage}
 
-## License  
+## License 
+${data.license}
 ${licenseString[1]}
 
 ## Contributing  
 ${data.guidelines}
 
 ## Tests  
-${data.tests}
+${data.test}
 
 ## Questions
 Link to github: [Click Here](https://github.com/${data.username})  
