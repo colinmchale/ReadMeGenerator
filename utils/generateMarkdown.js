@@ -2,19 +2,19 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "Apache 2.0") {
-    licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    licenseBadge = "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
     return licenseBadge;
   } else if (license === "GPL v3") {
-    licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+    licenseBadge = "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
     return licenseBadge;
   }  else if (license === "MPL 2.0") {
-    licenseBadge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+    licenseBadge = "![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)";
     return licenseBadge;
   } else if (license === "Unlicense") {
-    licenseBadge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+    licenseBadge = "![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]";
     return licenseBadge;
   } else if (license === "WTFPL") {
-    licenseBadge = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
+    licenseBadge = "![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)";
     return licenseBadge;
   } else {
     return [];
